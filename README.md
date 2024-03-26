@@ -1,0 +1,2 @@
+# nudoc
+Nu documentation generator 👙
