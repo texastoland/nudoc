@@ -1,0 +1,14 @@
+{
+  name: nudoc
+  version: 0.1.0
+  type: module
+  description: 'Nu documentation generator 👙'
+  # other fields modeled off package.json
+  license: Unlicense
+  author: {
+    name: 'Texas Toland'
+    github: texastoland
+    discord: texastoland
+  }
+  repository: 'github:texastoland/nudoc'
+}
