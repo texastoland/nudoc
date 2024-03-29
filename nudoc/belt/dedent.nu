@@ -1,5 +1,11 @@
 export def main []: string -> string {
-  let lines = lines
+  let keep_empty_lines = if ($in | is-empty) or $in ends-with "\n" {
+    $in + "\n"
+  } else {
+    $in
+  }
+  let lines = $keep_empty_lines
+    | lines
     | wrap text
     | insert length { get text | str trim --left | str length }
     | insert indent { ($in.text | str length) - $in.length }
