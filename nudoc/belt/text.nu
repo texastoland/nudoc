@@ -1,4 +1,4 @@
-export def main []: string -> string {
+export def dedent []: string -> string {
   let keep_empty_lines = if ($in | is-empty) or $in ends-with "\n" {
     $in + "\n"
   } else {

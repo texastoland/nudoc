@@ -1,2 +1,2 @@
 export module html.nu
-export use dedent.nu *
+export module text.nu
